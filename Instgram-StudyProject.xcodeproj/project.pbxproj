@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733EA9A50C5A547E7ED17AF1 /* Pods_Instgram_StudyProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD7F9E42C23542CD60F8B80 /* Pods_Instgram_StudyProjectTests.framework */; };
+		84BF03F6D650DFED66AD139C /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE59419B3BF666CAED1E81F0 /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework */; };
 		A302075727B0056500DE3A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302075627B0056500DE3A81 /* AppDelegate.swift */; };
 		A302075927B0056500DE3A81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302075827B0056500DE3A81 /* SceneDelegate.swift */; };
 		A302075B27B0056500DE3A81 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302075A27B0056500DE3A81 /* HomeViewController.swift */; };
@@ -23,6 +25,7 @@
 		A302079527B0091200DE3A81 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302079427B0091200DE3A81 /* ProfileViewController.swift */; };
 		A302079A27B009AD00DE3A81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302079927B009AD00DE3A81 /* LoginViewController.swift */; };
 		A302079C27B00A1E00DE3A81 /* RegisterationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302079B27B00A1E00DE3A81 /* RegisterationViewController.swift */; };
+		E934E94B0B32B687D0B7C216 /* Pods_Instgram_StudyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E984A1FF8209BC4E06E8872 /* Pods_Instgram_StudyProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FE5DF3BF6EFD8B2135E2066 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		11EA3EAE904000A67C7A400C /* Pods-Instgram-StudyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		3E984A1FF8209BC4E06E8872 /* Pods_Instgram_StudyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_StudyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAE1FA66EBCC6361A9A0707 /* Pods-Instgram-StudyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.release.xcconfig"; sourceTree = "<group>"; };
+		5CD7F9E42C23542CD60F8B80 /* Pods_Instgram_StudyProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_StudyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6619EF1A07A56C80A93B9579 /* Pods-Instgram-StudyProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProjectTests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AE4D3F36521143C2588ABF6 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A302075327B0056500DE3A81 /* Instgram-StudyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instgram-StudyProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A302075627B0056500DE3A81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A302075827B0056500DE3A81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,8 @@
 		A302079427B0091200DE3A81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A302079927B009AD00DE3A81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A302079B27B00A1E00DE3A81 /* RegisterationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewController.swift; sourceTree = "<group>"; };
+		AE59419B3BF666CAED1E81F0 /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38FC200D908DEB65BD65345 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E934E94B0B32B687D0B7C216 /* Pods_Instgram_StudyProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				733EA9A50C5A547E7ED17AF1 /* Pods_Instgram_StudyProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +98,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BF03F6D650DFED66AD139C /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A44DF5FA8DCA31A3008AFBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11EA3EAE904000A67C7A400C /* Pods-Instgram-StudyProject.debug.xcconfig */,
+				3FAE1FA66EBCC6361A9A0707 /* Pods-Instgram-StudyProject.release.xcconfig */,
+				8AE4D3F36521143C2588ABF6 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig */,
+				0FE5DF3BF6EFD8B2135E2066 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */,
+				E38FC200D908DEB65BD65345 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */,
+				6619EF1A07A56C80A93B9579 /* Pods-Instgram-StudyProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5677AD077068ABAE085B8938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E984A1FF8209BC4E06E8872 /* Pods_Instgram_StudyProject.framework */,
+				AE59419B3BF666CAED1E81F0 /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework */,
+				5CD7F9E42C23542CD60F8B80 /* Pods_Instgram_StudyProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A302074A27B0056500DE3A81 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +136,8 @@
 				A302076F27B0056700DE3A81 /* Instgram-StudyProjectTests */,
 				A302077927B0056800DE3A81 /* Instgram-StudyProjectUITests */,
 				A302075427B0056500DE3A81 /* Products */,
+				2A44DF5FA8DCA31A3008AFBB /* Pods */,
+				5677AD077068ABAE085B8938 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A302078027B0056800DE3A81 /* Build configuration list for PBXNativeTarget "Instgram-StudyProject" */;
 			buildPhases = (
+				1B40946025050DF7A3FA1785 /* [CP] Check Pods Manifest.lock */,
 				A302074F27B0056500DE3A81 /* Sources */,
 				A302075027B0056500DE3A81 /* Frameworks */,
 				A302075127B0056500DE3A81 /* Resources */,
@@ -236,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A302078327B0056800DE3A81 /* Build configuration list for PBXNativeTarget "Instgram-StudyProjectTests" */;
 			buildPhases = (
+				AD8CB68EFEFFD3956A9A284D /* [CP] Check Pods Manifest.lock */,
 				A302076827B0056700DE3A81 /* Sources */,
 				A302076927B0056700DE3A81 /* Frameworks */,
 				A302076A27B0056700DE3A81 /* Resources */,
@@ -254,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A302078627B0056800DE3A81 /* Build configuration list for PBXNativeTarget "Instgram-StudyProjectUITests" */;
 			buildPhases = (
+				C2CDA7C8BFFE3F9BB3F43C2A /* [CP] Check Pods Manifest.lock */,
 				A302077227B0056800DE3A81 /* Sources */,
 				A302077327B0056800DE3A81 /* Frameworks */,
 				A302077427B0056800DE3A81 /* Resources */,
@@ -337,6 +381,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B40946025050DF7A3FA1785 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instgram-StudyProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD8CB68EFEFFD3956A9A284D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instgram-StudyProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CDA7C8BFFE3F9BB3F43C2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A302074F27B0056500DE3A81 /* Sources */ = {
@@ -526,6 +639,7 @@
 		};
 		A302078127B0056800DE3A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EA3EAE904000A67C7A400C /* Pods-Instgram-StudyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,6 +668,7 @@
 		};
 		A302078227B0056800DE3A81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAE1FA66EBCC6361A9A0707 /* Pods-Instgram-StudyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,6 +697,7 @@
 		};
 		A302078427B0056800DE3A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38FC200D908DEB65BD65345 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -606,6 +722,7 @@
 		};
 		A302078527B0056800DE3A81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6619EF1A07A56C80A93B9579 /* Pods-Instgram-StudyProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,6 +747,7 @@
 		};
 		A302078727B0056800DE3A81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE4D3F36521143C2588ABF6 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -652,6 +770,7 @@
 		};
 		A302078827B0056800DE3A81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE5DF3BF6EFD8B2135E2066 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

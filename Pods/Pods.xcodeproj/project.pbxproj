@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DA763EDDB4980E5ADA53D92549040C2 /* Pods-Instgram-StudyProjectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86035135BC24181D9A15172A4617EB0E /* Pods-Instgram-StudyProjectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		552F90B6741176CA6721CABA23D7F436 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DE0B1CA333E7437D880D965C2B6795 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-dummy.m */; };
+		680D8F61DD8BFF5B1AFEFE29C0B23B60 /* Pods-Instgram-StudyProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FB2D12F611EB72E10C189F1DED088 /* Pods-Instgram-StudyProject-dummy.m */; };
+		6CFA04A544E1DEE10BAA749E7540FFB2 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 974071B0A6526DC1D5DACE56F263D034 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAF1028E017E855FAB65F2C08FA4AB36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C6099373AFEF6D1BED07230D3E93E5CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CCA9597449B04C26C508B4B5F515A3C7 /* Pods-Instgram-StudyProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F91CFFFCA2CB64660BBEEDB40F8D54D1 /* Pods-Instgram-StudyProjectTests-dummy.m */; };
+		DC9FC8BD4CD4D2C2D00E894BE6EF81B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F0E3D6306167132DD881193C8E10404E /* Pods-Instgram-StudyProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C653AEFE7465441F0439F55C446F113F /* Pods-Instgram-StudyProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F19F27CEF5228732089C3C9128A45115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C84133ACC05E4BEF45C870703346161;
+			remoteInfo = "Pods-Instgram-StudyProject";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034D19999BCBBD2A943D13044C897A26 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-Info.plist"; sourceTree = "<group>"; };
+		11BB263B2736DCD63DB7DF21A568F577 /* Pods-Instgram-StudyProjectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Instgram-StudyProjectTests-Info.plist"; sourceTree = "<group>"; };
+		1CEFA63231969CC11D242167151F9435 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests"; path = Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		207343038ABCAC5D6F4E323A390C6432 /* Pods-Instgram-StudyProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Instgram-StudyProject-Info.plist"; sourceTree = "<group>"; };
+		2519D56C64839295AA6DA6C981C6FDE5 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C18C9978C5071568B656F6299FA178D /* Pods-Instgram-StudyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Instgram-StudyProject.release.xcconfig"; sourceTree = "<group>"; };
+		3B7315BF707DF7861C80B2B873594A70 /* Pods-Instgram-StudyProject */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Instgram-StudyProject"; path = Pods_Instgram_StudyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EAE8BCCE7FB3E19A49C22916211AAE6 /* Pods-Instgram-StudyProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Instgram-StudyProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		41EB018AF62EF27DDE043587DF7031AA /* Pods-Instgram-StudyProjectTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Instgram-StudyProjectTests"; path = Pods_Instgram_StudyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DE0B1CA333E7437D880D965C2B6795 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-dummy.m"; sourceTree = "<group>"; };
+		67D71A885D28B918D56A4908809C2468 /* Pods-Instgram-StudyProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Instgram-StudyProject.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C85F76D958CD39BCD0A508E44A459FA /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86035135BC24181D9A15172A4617EB0E /* Pods-Instgram-StudyProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Instgram-StudyProjectTests-umbrella.h"; sourceTree = "<group>"; };
+		89A3E9070268E84741A3D8089161D460 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Instgram-StudyProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A661B8C30C029236680B3689347F853 /* Pods-Instgram-StudyProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Instgram-StudyProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A6DA58DDD6901762B27873DB0954C4F /* Pods-Instgram-StudyProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Instgram-StudyProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		974071B0A6526DC1D5DACE56F263D034 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-umbrella.h"; sourceTree = "<group>"; };
+		9B23C95249219768EF61F855A1EF0CA0 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A331F59E7B141198BF12626E3FD4B8CF /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6156F0B478C7FBBDC3D3F42E5D438CD /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.modulemap"; sourceTree = "<group>"; };
+		C653AEFE7465441F0439F55C446F113F /* Pods-Instgram-StudyProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Instgram-StudyProject-umbrella.h"; sourceTree = "<group>"; };
+		C95687F478CA1F575D05E3326566C029 /* Pods-Instgram-StudyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Instgram-StudyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D87D47B0C64C013013659D34E8594822 /* Pods-Instgram-StudyProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Instgram-StudyProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DAA08AB61F48089070298AACA6E16907 /* Pods-Instgram-StudyProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Instgram-StudyProjectTests.modulemap"; sourceTree = "<group>"; };
+		EA4A1938272AD51D080C004C112C700E /* Pods-Instgram-StudyProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Instgram-StudyProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		F03FB2D12F611EB72E10C189F1DED088 /* Pods-Instgram-StudyProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Instgram-StudyProject-dummy.m"; sourceTree = "<group>"; };
+		F91CFFFCA2CB64660BBEEDB40F8D54D1 /* Pods-Instgram-StudyProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Instgram-StudyProjectTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		252B7C2CC9430A54FF477A4864B3B415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9FC8BD4CD4D2C2D00E894BE6EF81B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46441BFB6FF73DBCAD7A8BB2A4607509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF1028E017E855FAB65F2C08FA4AB36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA001F8ACA921C6B525BEA414CEFDE35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6099373AFEF6D1BED07230D3E93E5CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD5E773CDF2B1368115495045D92BB3 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6156F0B478C7FBBDC3D3F42E5D438CD /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.modulemap */,
+				7C85F76D958CD39BCD0A508E44A459FA /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-acknowledgements.markdown */,
+				9B23C95249219768EF61F855A1EF0CA0 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-acknowledgements.plist */,
+				43DE0B1CA333E7437D880D965C2B6795 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-dummy.m */,
+				034D19999BCBBD2A943D13044C897A26 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-Info.plist */,
+				974071B0A6526DC1D5DACE56F263D034 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-umbrella.h */,
+				2519D56C64839295AA6DA6C981C6FDE5 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig */,
+				A331F59E7B141198BF12626E3FD4B8CF /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */,
+			);
+			name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests";
+			path = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		60552F38FF0C2D0E5605140B5CF59D22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B7315BF707DF7861C80B2B873594A70 /* Pods-Instgram-StudyProject */,
+				1CEFA63231969CC11D242167151F9435 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */,
+				41EB018AF62EF27DDE043587DF7031AA /* Pods-Instgram-StudyProjectTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AB07EAAA0181E6FA22959666E84394A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECFEBF1628EA547CB3DE92B5268C4D76 /* Pods-Instgram-StudyProject */,
+				0FD5E773CDF2B1368115495045D92BB3 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */,
+				EDF680A1F66A820A7BF24D210B949744 /* Pods-Instgram-StudyProjectTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				60552F38FF0C2D0E5605140B5CF59D22 /* Products */,
+				7AB07EAAA0181E6FA22959666E84394A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECFEBF1628EA547CB3DE92B5268C4D76 /* Pods-Instgram-StudyProject */ = {
+			isa = PBXGroup;
+			children = (
+				67D71A885D28B918D56A4908809C2468 /* Pods-Instgram-StudyProject.modulemap */,
+				D87D47B0C64C013013659D34E8594822 /* Pods-Instgram-StudyProject-acknowledgements.markdown */,
+				EA4A1938272AD51D080C004C112C700E /* Pods-Instgram-StudyProject-acknowledgements.plist */,
+				F03FB2D12F611EB72E10C189F1DED088 /* Pods-Instgram-StudyProject-dummy.m */,
+				207343038ABCAC5D6F4E323A390C6432 /* Pods-Instgram-StudyProject-Info.plist */,
+				C653AEFE7465441F0439F55C446F113F /* Pods-Instgram-StudyProject-umbrella.h */,
+				C95687F478CA1F575D05E3326566C029 /* Pods-Instgram-StudyProject.debug.xcconfig */,
+				2C18C9978C5071568B656F6299FA178D /* Pods-Instgram-StudyProject.release.xcconfig */,
+			);
+			name = "Pods-Instgram-StudyProject";
+			path = "Target Support Files/Pods-Instgram-StudyProject";
+			sourceTree = "<group>";
+		};
+		EDF680A1F66A820A7BF24D210B949744 /* Pods-Instgram-StudyProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA08AB61F48089070298AACA6E16907 /* Pods-Instgram-StudyProjectTests.modulemap */,
+				8A6DA58DDD6901762B27873DB0954C4F /* Pods-Instgram-StudyProjectTests-acknowledgements.markdown */,
+				8A661B8C30C029236680B3689347F853 /* Pods-Instgram-StudyProjectTests-acknowledgements.plist */,
+				F91CFFFCA2CB64660BBEEDB40F8D54D1 /* Pods-Instgram-StudyProjectTests-dummy.m */,
+				11BB263B2736DCD63DB7DF21A568F577 /* Pods-Instgram-StudyProjectTests-Info.plist */,
+				86035135BC24181D9A15172A4617EB0E /* Pods-Instgram-StudyProjectTests-umbrella.h */,
+				89A3E9070268E84741A3D8089161D460 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */,
+				3EAE8BCCE7FB3E19A49C22916211AAE6 /* Pods-Instgram-StudyProjectTests.release.xcconfig */,
+			);
+			name = "Pods-Instgram-StudyProjectTests";
+			path = "Target Support Files/Pods-Instgram-StudyProjectTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12BF0247F0AF32F4DCD3396EDAAD3756 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA763EDDB4980E5ADA53D92549040C2 /* Pods-Instgram-StudyProjectTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B5D3F1E45A4079BB1A0C4180C97853 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E3D6306167132DD881193C8E10404E /* Pods-Instgram-StudyProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75523A1F88F9FB6EB74199F630BC543A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFA04A544E1DEE10BAA749E7540FFB2 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C84133ACC05E4BEF45C870703346161 /* Pods-Instgram-StudyProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E791B2D497E87DC2D382B7C9E934B38B /* Build configuration list for PBXNativeTarget "Pods-Instgram-StudyProject" */;
+			buildPhases = (
+				64B5D3F1E45A4079BB1A0C4180C97853 /* Headers */,
+				638D08274A141454ACB7A3CFCE599296 /* Sources */,
+				252B7C2CC9430A54FF477A4864B3B415 /* Frameworks */,
+				23E9127828B70A2880E895AAD3D8F277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Instgram-StudyProject";
+			productName = Pods_Instgram_StudyProject;
+			productReference = 3B7315BF707DF7861C80B2B873594A70 /* Pods-Instgram-StudyProject */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A03F7E7C7BADBE68D2971B5670A2419 /* Pods-Instgram-StudyProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE730BED918C55F7A566D753AC523C0 /* Build configuration list for PBXNativeTarget "Pods-Instgram-StudyProjectTests" */;
+			buildPhases = (
+				12BF0247F0AF32F4DCD3396EDAAD3756 /* Headers */,
+				BCA43F0019326CF207927AB901E5F37E /* Sources */,
+				CA001F8ACA921C6B525BEA414CEFDE35 /* Frameworks */,
+				59409E6A6CA695B1CB5652F8E50C6F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8E4C934D7502641C5510DE0723B0726 /* PBXTargetDependency */,
+			);
+			name = "Pods-Instgram-StudyProjectTests";
+			productName = Pods_Instgram_StudyProjectTests;
+			productReference = 41EB018AF62EF27DDE043587DF7031AA /* Pods-Instgram-StudyProjectTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BB1CDABE9989B8EA1050BE9E2AAB7F1 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674D97093A2284108DB328527AEA46E6 /* Build configuration list for PBXNativeTarget "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests" */;
+			buildPhases = (
+				75523A1F88F9FB6EB74199F630BC543A /* Headers */,
+				3ECD89E6BC102D32E1ADC04247E34641 /* Sources */,
+				46441BFB6FF73DBCAD7A8BB2A4607509 /* Frameworks */,
+				059903102D5EE630C5191D1706B1899F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests";
+			productName = Pods_Instgram_StudyProject_Instgram_StudyProjectUITests;
+			productReference = 1CEFA63231969CC11D242167151F9435 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 60552F38FF0C2D0E5605140B5CF59D22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C84133ACC05E4BEF45C870703346161 /* Pods-Instgram-StudyProject */,
+				8BB1CDABE9989B8EA1050BE9E2AAB7F1 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests */,
+				6A03F7E7C7BADBE68D2971B5670A2419 /* Pods-Instgram-StudyProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		059903102D5EE630C5191D1706B1899F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23E9127828B70A2880E895AAD3D8F277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59409E6A6CA695B1CB5652F8E50C6F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ECD89E6BC102D32E1ADC04247E34641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552F90B6741176CA6721CABA23D7F436 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638D08274A141454ACB7A3CFCE599296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680D8F61DD8BFF5B1AFEFE29C0B23B60 /* Pods-Instgram-StudyProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA43F0019326CF207927AB901E5F37E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA9597449B04C26C508B4B5F515A3C7 /* Pods-Instgram-StudyProjectTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8E4C934D7502641C5510DE0723B0726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Instgram-StudyProject";
+			target = 5C84133ACC05E4BEF45C870703346161 /* Pods-Instgram-StudyProject */;
+			targetProxy = F19F27CEF5228732089C3C9128A45115 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		475ADA9ED8CB541E21B2D60560973C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EAE8BCCE7FB3E19A49C22916211AAE6 /* Pods-Instgram-StudyProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		757A2D72619AAF8A4F99D81109B86E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95687F478CA1F575D05E3326566C029 /* Pods-Instgram-StudyProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BB34B7830FD305FEB8125C6D38D0584A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A3E9070268E84741A3D8089161D460 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D50F1D00A82A12100961335709FE03CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A331F59E7B141198BF12626E3FD4B8CF /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7718D6A4DEC87A659F52D52D262FDFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C18C9978C5071568B656F6299FA178D /* Pods-Instgram-StudyProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF12F1260F093F47F315E5ACE0040DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2519D56C64839295AA6DA6C981C6FDE5 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674D97093A2284108DB328527AEA46E6 /* Build configuration list for PBXNativeTarget "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF12F1260F093F47F315E5ACE0040DE0 /* Debug */,
+				D50F1D00A82A12100961335709FE03CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE730BED918C55F7A566D753AC523C0 /* Build configuration list for PBXNativeTarget "Pods-Instgram-StudyProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB34B7830FD305FEB8125C6D38D0584A /* Debug */,
+				475ADA9ED8CB541E21B2D60560973C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E791B2D497E87DC2D382B7C9E934B38B /* Build configuration list for PBXNativeTarget "Pods-Instgram-StudyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757A2D72619AAF8A4F99D81109B86E5E /* Debug */,
+				D7718D6A4DEC87A659F52D52D262FDFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
