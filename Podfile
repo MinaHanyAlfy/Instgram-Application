@@ -16,4 +16,14 @@ target 'Instgram-StudyProject' do
     # Pods for testing
   end
 
+
+pod 'Appirater', '2.3.1'
+#Firebase 
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+pod 'Firebase/Storage'
+
 end

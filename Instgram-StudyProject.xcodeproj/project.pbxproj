@@ -25,6 +25,19 @@
 		A302079527B0091200DE3A81 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302079427B0091200DE3A81 /* ProfileViewController.swift */; };
 		A302079A27B009AD00DE3A81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302079927B009AD00DE3A81 /* LoginViewController.swift */; };
 		A302079C27B00A1E00DE3A81 /* RegisterationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302079B27B00A1E00DE3A81 /* RegisterationViewController.swift */; };
+		A3EE001127B3AFA200FF1995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3EE001027B3AFA200FF1995 /* GoogleService-Info.plist */; };
+		A3EE001327B3B27500FF1995 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001227B3B27500FF1995 /* PostViewController.swift */; };
+		A3EE001527B3B28500FF1995 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001427B3B28500FF1995 /* EditProfileViewController.swift */; };
+		A3EE001727B3B29400FF1995 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001627B3B29400FF1995 /* SettingsViewController.swift */; };
+		A3EE001927B3B2A300FF1995 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001827B3B2A300FF1995 /* ListViewController.swift */; };
+		A3EE001B27B3B2C100FF1995 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001A27B3B2C100FF1995 /* SearchViewController.swift */; };
+		A3EE001D27B3B2D100FF1995 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001C27B3B2D100FF1995 /* SearchResultViewController.swift */; };
+		A3EE001F27B3B2E200FF1995 /* PostEditiorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE001E27B3B2E200FF1995 /* PostEditiorViewController.swift */; };
+		A3EE002127B3B2F300FF1995 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE002027B3B2F300FF1995 /* PublishViewController.swift */; };
+		A3EE002427B3B51200FF1995 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE002327B3B51200FF1995 /* DatabaseManager.swift */; };
+		A3EE002627B3B5C400FF1995 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE002527B3B5C400FF1995 /* AuthManager.swift */; };
+		A3EE002827B3B60600FF1995 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE002727B3B60600FF1995 /* StorageManager.swift */; };
+		A3EE002A27B3C58800FF1995 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE002927B3C58800FF1995 /* Extensions.swift */; };
 		E934E94B0B32B687D0B7C216 /* Pods_Instgram_StudyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E984A1FF8209BC4E06E8872 /* Pods_Instgram_StudyProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +86,19 @@
 		A302079427B0091200DE3A81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A302079927B009AD00DE3A81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A302079B27B00A1E00DE3A81 /* RegisterationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationViewController.swift; sourceTree = "<group>"; };
+		A3EE001027B3AFA200FF1995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3EE001227B3B27500FF1995 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		A3EE001427B3B28500FF1995 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		A3EE001627B3B29400FF1995 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A3EE001827B3B2A300FF1995 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A3EE001A27B3B2C100FF1995 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3EE001C27B3B2D100FF1995 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		A3EE001E27B3B2E200FF1995 /* PostEditiorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditiorViewController.swift; sourceTree = "<group>"; };
+		A3EE002027B3B2F300FF1995 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
+		A3EE002327B3B51200FF1995 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		A3EE002527B3B5C400FF1995 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A3EE002727B3B60600FF1995 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A3EE002927B3C58800FF1995 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AE59419B3BF666CAED1E81F0 /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38FC200D908DEB65BD65345 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProjectTests/Pods-Instgram-StudyProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +141,6 @@
 				E38FC200D908DEB65BD65345 /* Pods-Instgram-StudyProjectTests.debug.xcconfig */,
 				6619EF1A07A56C80A93B9579 /* Pods-Instgram-StudyProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,8 +234,13 @@
 		A302078C27B005E500DE3A81 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3EE001027B3AFA200FF1995 /* GoogleService-Info.plist */,
 				A302075627B0056500DE3A81 /* AppDelegate.swift */,
 				A302075827B0056500DE3A81 /* SceneDelegate.swift */,
+				A3EE002327B3B51200FF1995 /* DatabaseManager.swift */,
+				A3EE002527B3B5C400FF1995 /* AuthManager.swift */,
+				A3EE002727B3B60600FF1995 /* StorageManager.swift */,
+				A3EE002927B3C58800FF1995 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				A302079827B0099C00DE3A81 /* OnBoarding */,
+				A3EE002227B3B2FB00FF1995 /* General */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -253,6 +284,21 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		A3EE002227B3B2FB00FF1995 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A3EE001227B3B27500FF1995 /* PostViewController.swift */,
+				A3EE001427B3B28500FF1995 /* EditProfileViewController.swift */,
+				A3EE001627B3B29400FF1995 /* SettingsViewController.swift */,
+				A3EE001827B3B2A300FF1995 /* ListViewController.swift */,
+				A3EE001A27B3B2C100FF1995 /* SearchViewController.swift */,
+				A3EE001C27B3B2D100FF1995 /* SearchResultViewController.swift */,
+				A3EE001E27B3B2E200FF1995 /* PostEditiorViewController.swift */,
+				A3EE002027B3B2F300FF1995 /* PublishViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +310,7 @@
 				A302074F27B0056500DE3A81 /* Sources */,
 				A302075027B0056500DE3A81 /* Frameworks */,
 				A302075127B0056500DE3A81 /* Resources */,
+				7FE4FFC9CFEEE2719DED7665 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +348,7 @@
 				A302077227B0056800DE3A81 /* Sources */,
 				A302077327B0056800DE3A81 /* Frameworks */,
 				A302077427B0056800DE3A81 /* Resources */,
+				35D7A7BE37EF875A7BFEA61C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A302076627B0056700DE3A81 /* LaunchScreen.storyboard in Resources */,
+				A3EE001127B3AFA200FF1995 /* GoogleService-Info.plist in Resources */,
 				A302076327B0056700DE3A81 /* Assets.xcassets in Resources */,
 				A302075E27B0056500DE3A81 /* Main.storyboard in Resources */,
 			);
@@ -403,6 +452,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35D7A7BE37EF875A7BFEA61C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FE4FFC9CFEEE2719DED7665 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD8CB68EFEFFD3956A9A284D /* [CP] Check Pods Manifest.lock */ = {
@@ -456,16 +539,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3EE001B27B3B2C100FF1995 /* SearchViewController.swift in Sources */,
 				A302079A27B009AD00DE3A81 /* LoginViewController.swift in Sources */,
 				A302075B27B0056500DE3A81 /* HomeViewController.swift in Sources */,
+				A3EE002827B3B60600FF1995 /* StorageManager.swift in Sources */,
+				A3EE001F27B3B2E200FF1995 /* PostEditiorViewController.swift in Sources */,
 				A302075727B0056500DE3A81 /* AppDelegate.swift in Sources */,
 				A302078F27B008D400DE3A81 /* ExploreViewController.swift in Sources */,
 				A302076127B0056500DE3A81 /* Instgram_StudyProject.xcdatamodeld in Sources */,
 				A302079C27B00A1E00DE3A81 /* RegisterationViewController.swift in Sources */,
+				A3EE002A27B3C58800FF1995 /* Extensions.swift in Sources */,
+				A3EE002127B3B2F300FF1995 /* PublishViewController.swift in Sources */,
+				A3EE002627B3B5C400FF1995 /* AuthManager.swift in Sources */,
+				A3EE001927B3B2A300FF1995 /* ListViewController.swift in Sources */,
 				A302075927B0056500DE3A81 /* SceneDelegate.swift in Sources */,
 				A302079327B008F200DE3A81 /* NotificationsViewController.swift in Sources */,
+				A3EE001527B3B28500FF1995 /* EditProfileViewController.swift in Sources */,
 				A302079527B0091200DE3A81 /* ProfileViewController.swift in Sources */,
+				A3EE002427B3B51200FF1995 /* DatabaseManager.swift in Sources */,
+				A3EE001727B3B29400FF1995 /* SettingsViewController.swift in Sources */,
 				A302079127B008E400DE3A81 /* CameraViewController.swift in Sources */,
+				A3EE001D27B3B2D100FF1995 /* SearchResultViewController.swift in Sources */,
+				A3EE001327B3B27500FF1995 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
