@@ -35,3 +35,8 @@ extension UIView{
     
     
 }
+extension String{
+    func safeDatabase() -> String {
+        return self.replacingOccurrences(of: ".", with: "-")
+    }
+}

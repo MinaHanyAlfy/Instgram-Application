@@ -29,6 +29,8 @@ class HomeViewController: UIViewController {
             loginVc.modalPresentationStyle = .fullScreen
             present(loginVc, animated: true, completion: nil)
             
+        }else{
+            print(Auth.auth().currentUser , Auth.auth().currentUser?.displayName.)
         }
         
     }

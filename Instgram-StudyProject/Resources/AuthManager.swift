@@ -12,12 +12,53 @@ public class AuthManager{
     static let shared = AuthManager ()
     
     //MARK: - public
-    public func registerNewUser(username: String, password: String, email: String){
-        
+    public func registerNewUser(username: String, password: String, email: String, completion: @escaping (Bool) -> Void){
+            DatabaseManager.shared.canCreateNewUser(with: email, username: username) { canCreate in
+            DispatchQueue.main.async {
+                if canCreate {
+                    //Here Can create  and insert into database.
+                    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                        if error == nil , authResult != nil {
+                            //Firebase  Could not create account
+                            completion(false )
+                            return
+                        }
+                        DatabaseManager.shared.insertNewUserDatabase(with: email, username: username){ inserted in
+                            if inserted{
+                                completion(true)
+                                return
+                            }else {
+                                 completion(false)
+                                return
+                            }
+                        }
+                        
+                    }
+                }else {
+                               
+                    completion(false)
+                    return
+                }
+            }
+        }
     }
     
-    public func loginUser(username: String?, password: String, email: String?){
+    public func loginUser(username: String?, password: String, email: String?, completion: @escaping (Bool) -> Void ){
+        if let  email = email {
+            //  email login
+            
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                guard authResult != nil,error != nil else{
+                    completion(false)
+                    return
+                }
+                completion(true )
+            }
         
+        }else if let  username = username {
+            // username login
+            print(username)
+        }
         
     }
 }

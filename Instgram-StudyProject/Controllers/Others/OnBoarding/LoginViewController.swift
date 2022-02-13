@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
         let button = UIButton()
         button.setTitle("New User? Create an Account", for: .normal)
         button.setTitleColor(.label ,for: .normal)
-//        button.backgroundColor =
+        //        button.backgroundColor =
         return button
     }()
     
@@ -110,6 +110,12 @@ class LoginViewController: UIViewController {
         
         //MARK: - assign frames
         
+        configureForm()
+        configurationHeaderView()
+    }
+    
+    
+    private func configureForm(){
         headerView.frame = CGRect(
             x: 0.0,
             y: 0.0,
@@ -154,9 +160,7 @@ class LoginViewController: UIViewController {
             width: view.width - 50,
             height: 52.0
         )
-        configurationHeaderView()
     }
-    
     private func configurationHeaderView(){
         guard headerView.subviews.count == 1 else {
             return
@@ -192,12 +196,30 @@ class LoginViewController: UIViewController {
     @objc private func didTapLoginButton(){
         usernameEmaillField.resignFirstResponder()
         passwordField.resignFirstResponder()
-        
+        var username: String?
+        var email: String?
         guard let usernameEmail = usernameEmaillField.text, !usernameEmail.isEmpty,
               let passowrd = passwordField.text, !passowrd.isEmpty, passowrd.count >= 8 else {
                   return
               }
-        print("login ")
+        if usernameEmail.contains("@"),usernameEmail.contains("."){
+            email = usernameEmail
+        }else{
+            username = usernameEmail
+        }
+        //Login functionality.
+        AuthManager.shared.loginUser(username: usernameEmail, password: passowrd, email: usernameEmail) { success in
+            DispatchQueue.main.async { [self] in
+                if success {
+                    dismiss(animated: true, completion: nil)
+                }else{
+                    let alert =  UIAlertController(title: "Log in error", message: "We were enable to log in.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
+                    present(alert, animated: true, completion: nil  )
+                }
+            }
+            
+        }
         
         
     }
@@ -205,6 +227,7 @@ class LoginViewController: UIViewController {
         guard let url = URL(string: "https://help.instagram.com/581066165581870") else{
             return
         }
+        
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true, completion: nil)
     }
@@ -212,13 +235,16 @@ class LoginViewController: UIViewController {
         guard let url = URL(string: "https://help.instagram.com/155833707900388") else{
             return
         }
+        
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true, completion: nil)
     }
     @objc private func didTapCreateAccountButton(){
         let vc = RegisterationViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+//        vc.modalPresentationStyle = .fullScreen
+        vc.title = "Create Account"
+        let navigationController = UINavigationController(rootViewController: vc)
+        present(navigationController, animated: true, completion: nil)
         
     }
     
