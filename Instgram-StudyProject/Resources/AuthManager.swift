@@ -18,9 +18,9 @@ public class AuthManager{
                 if canCreate {
                     //Here Can create  and insert into database.
                     Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                        if error == nil , authResult != nil {
+                        guard error == nil , authResult != nil else{
                             //Firebase  Could not create account
-                            completion(false )
+                            completion(false)
                             return
                         }
                         DatabaseManager.shared.insertNewUserDatabase(with: email, username: username){ inserted in
@@ -44,20 +44,37 @@ public class AuthManager{
     }
     
     public func loginUser(username: String?, password: String, email: String?, completion: @escaping (Bool) -> Void ){
-        if let  email = email {
+        print(email, username)
+        if let email = email {
             //  email login
             
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                guard authResult != nil,error != nil else{
+                guard authResult != nil,error == nil else{
                     completion(false)
                     return
                 }
-                completion(true )
+                completion(true)
+                return
             }
         
-        }else if let  username = username {
+        }else if let username = username {
             // username login
             print(username)
+        }
+        
+        
+    }
+    
+    
+    public func logoutUser(compelation: (Bool) -> Void) {
+        do{
+            try Auth.auth().signOut()
+            compelation(true)
+            return
+        }catch{
+            compelation(false)
+            print("Failed to logout")
+            return
         }
         
     }

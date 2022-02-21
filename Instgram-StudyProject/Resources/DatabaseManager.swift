@@ -13,6 +13,7 @@ public class DatabaseManager{
     
     public func canCreateNewUser(with email:String,username: String, compelation: @escaping (Bool) -> Void ){
         compelation(true)
+        return
         
     }
     public func insertNewUserDatabase(with email: String, username: String, compelation: @escaping (Bool) -> Void){
@@ -21,9 +22,11 @@ public class DatabaseManager{
             if error  == nil{
                 //Success
                 compelation(true)
+                return
             }else {
                 //Failure
                 compelation(false)
+                return
             }
         }
         

@@ -73,7 +73,7 @@ class RegisterationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerButton.addTarget(self, action: #selector(didTaSignUpButton), for: .touchUpInside)
+        registerButton.addTarget(self, action: #selector(didTapRegister), for: .touchUpInside)
         formViews()
         
         view.backgroundColor = .systemBackground
@@ -101,7 +101,7 @@ class RegisterationViewController: UIViewController {
         registerButton.frame = CGRect(x: 20, y:passwordField.bottom + 10, width: view.width-40, height: 52)
     }
     //MARK: - Buttons Tapp
-    @objc private func didTaSignUpButton(){
+    @objc private func didTapRegister(){
         usernameField.resignFirstResponder()
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
@@ -116,8 +116,9 @@ class RegisterationViewController: UIViewController {
       
         AuthManager.shared.registerNewUser(username: username, password: passowrd, email: email) { success in
             DispatchQueue.main.async {
+                print("response:",success)
                 if success {
-                    
+                    print("success")
                 }else {
                     let alert =  UIAlertController(title: "Register error", message: "We were enable to sign up .", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
@@ -137,7 +138,7 @@ extension RegisterationViewController: UITextFieldDelegate{
             emailField.becomeFirstResponder()
         }
         else if textField == passwordField{
-            didTaSignUpButton()
+            didTapRegister()
         }
         return true
     }

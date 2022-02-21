@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    handleNotAuthenticated()
+        handleNotAuthenticated()
     
     }
     
@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
             present(loginVc, animated: true, completion: nil)
             
         }else{
-            print(Auth.auth().currentUser , Auth.auth().currentUser?.displayName.)
+//            print(Auth.auth().currentUser , Auth.auth().currentUser?.displayName)
         }
         
     }
