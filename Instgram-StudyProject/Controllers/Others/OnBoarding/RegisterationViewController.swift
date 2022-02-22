@@ -113,13 +113,15 @@ class RegisterationViewController: UIViewController {
                   return
               }
         //Login functionality.
-      
+        registerButton.isEnabled = false
         AuthManager.shared.registerNewUser(username: username, password: passowrd, email: email) { success in
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [self] in
                 print("response:",success)
                 if success {
                     print("success")
+                    registerButton.isEnabled = true
                 }else {
+                    registerButton.isEnabled = true
                     let alert =  UIAlertController(title: "Register error", message: "We were enable to sign up .", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
                     self.present(alert, animated: true, completion: nil  )

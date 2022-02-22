@@ -26,4 +26,6 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Storage'
 
+pod 'NVActivityIndicatorView', '5.1.1'
+
 end

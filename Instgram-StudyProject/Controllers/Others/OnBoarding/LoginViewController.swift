@@ -7,9 +7,9 @@
 
 import UIKit
 import SafariServices
-
+import NVActivityIndicatorView
 class LoginViewController: UIViewController {
-    
+    let activityIndicator = NVActivityIndicatorView(frame: CGRect(x: 0  , y: 0, width: 100, height: 100), type: .circleStrokeSpin ,color: .systemGroupedBackground, padding: 8)
     struct Const {
         static let cornerRadius:  CGFloat = 8.0
     }
@@ -93,6 +93,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        activityIndicator.startAnimating()
         addSubViews()
         usernameEmaillField.delegate = self
         passwordField.delegate = self
@@ -109,7 +110,8 @@ class LoginViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         //MARK: - assign frames
-        
+        activityIndicator.center = view.center
+        view.addSubview(activityIndicator)
         configureForm()
         configurationHeaderView()
     }
@@ -208,15 +210,25 @@ class LoginViewController: UIViewController {
             username = usernameEmail
         }
         //Login functionality.
+        activityIndicator.startAnimating()
+//        print(activityIndicator.isAnimating ,"Animation !?!")
+        loginButton.isEnabled = false
         AuthManager.shared.loginUser(username: username, password: passowrd, email: email) { success in
             DispatchQueue.main.async { [self] in
                 print("Response: ",success)
                 if success {
+                    activityIndicator.stopAnimating()
+                    loginButton.isEnabled = true
                     dismiss(animated: true, completion: nil)
+                    
                 }else{
+                    activityIndicator.stopAnimating()
+//                    activityIndicator.s
+                    loginButton.isEnabled = true
                     let alert =  UIAlertController(title: "Log in error", message: "We were enable to log in.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
                     present(alert, animated: true, completion: nil  )
+             
                 }
             }
             

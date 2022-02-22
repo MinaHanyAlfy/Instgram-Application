@@ -7,13 +7,14 @@
 
 import Foundation
 import FirebaseAuth
-
+import NVActivityIndicatorView
 public class AuthManager{
     static let shared = AuthManager ()
-    
+  
     //MARK: - public
     public func registerNewUser(username: String, password: String, email: String, completion: @escaping (Bool) -> Void){
-            DatabaseManager.shared.canCreateNewUser(with: email, username: username) { canCreate in
+            
+        DatabaseManager.shared.canCreateNewUser(with: email, username: username) { canCreate in
             DispatchQueue.main.async {
                 if canCreate {
                     //Here Can create  and insert into database.
@@ -21,11 +22,13 @@ public class AuthManager{
                         guard error == nil , authResult != nil else{
                             //Firebase  Could not create account
                             completion(false)
+                            
                             return
                         }
                         DatabaseManager.shared.insertNewUserDatabase(with: email, username: username){ inserted in
                             if inserted{
                                 completion(true)
+                                
                                 return
                             }else {
                                  completion(false)
@@ -35,7 +38,6 @@ public class AuthManager{
                         
                     }
                 }else {
-                               
                     completion(false)
                     return
                 }
@@ -44,13 +46,15 @@ public class AuthManager{
     }
     
     public func loginUser(username: String?, password: String, email: String?, completion: @escaping (Bool) -> Void ){
+        
         print(email, username)
         if let email = email {
             //  email login
             
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 guard authResult != nil,error == nil else{
                     completion(false)
+                
                     return
                 }
                 completion(true)
@@ -60,6 +64,7 @@ public class AuthManager{
         }else if let username = username {
             // username login
             print(username)
+
         }
         
         

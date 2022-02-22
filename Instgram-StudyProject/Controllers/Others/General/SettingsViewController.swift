@@ -49,23 +49,30 @@ class SettingsViewController: UIViewController {
     }
     
     private func didTapLogOut(){
-        AuthManager.shared.logoutUser { success in
-            DispatchQueue.main.async {
-                if success {
-                    let loginVc = LoginViewController()
-                    loginVc.modalPresentationStyle = .fullScreen
-                    self.present(loginVc, animated: true) {
-                        self.navigationController?.popToRootViewController(animated: true)
-                        self.tabBarController?.selectedIndex = 0
+        let actionSheet = UIAlertController(title: "Log Out", message: "Are you sure you want to log out ?!", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { _ in
+            AuthManager.shared.logoutUser { success in
+                DispatchQueue.main.async {
+                    if success {
+                        let loginVc = LoginViewController()
+                        loginVc.modalPresentationStyle = .fullScreen
+                        self.present(loginVc, animated: true) {
+                            self.navigationController?.popToRootViewController(animated: true)
+                            self.tabBarController?.selectedIndex = 0
+                        }
+                        
+                    }else{
+                        print("Error to logout")
+                        
                     }
-                    
-                }else{
-                    print("Error to logout")
-                    
                 }
+                
             }
-            
-        }
+        }))
+        actionSheet.popoverPresentationController?.sourceView = tableView
+        actionSheet.popoverPresentationController?.sourceRect = tableView.bounds
+        present(actionSheet, animated: true, completion: nil)
     }
     
 }
