@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import SafariServices
 struct SettingsCellModel{
     let title: String
     let handler: (() -> Void)
@@ -28,7 +29,7 @@ class SettingsViewController: UIViewController {
         configureModels()
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.backgroundColor = .systemBackground
+        //        tableView.backgroundColor = .systemBackground
         
         // Do any additional setup after loading the view.
     }
@@ -39,14 +40,78 @@ class SettingsViewController: UIViewController {
     }
     
     private func configureModels(){
-        let section = [
+        
+        data.append([
+            SettingsCellModel(title: "Edit Profile", handler: { [weak self] in
+                self?.didTapEditProfile()
+            })
+            ,SettingsCellModel(title: "Invite Friends", handler: { [weak self] in
+                self?.didTapInviteFriends()
+            })
+            ,SettingsCellModel(title: "Save Original Posts", handler: { [weak self] in
+                self?.didTapSaveOriginalPosts()
+            })
+            
+        ])
+        
+        data.append([
+            SettingsCellModel(title: "Terms of Service", handler: { [weak self] in
+                self?.openUrl(type: .terms)
+            }),
+            SettingsCellModel(title: "Privacy Policy", handler: { [weak self] in
+                self?.openUrl(type: .privacy)
+            }),
+            SettingsCellModel(title: "Help / Feedback", handler: { [weak self] in
+                self?.openUrl(type: .help)
+            })
+        ])
+        
+        data.append([
             SettingsCellModel(title: "Logout", handler: { [weak self] in
                 self?.didTapLogOut()
             })
-        ]
-        data.append(section)
+        ])
         
     }
+
+    private func didTapEditProfile(){
+        let vc = EditProfileViewController()
+        vc.navigationItem.title = "Edit Profile"
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    private func didTapInviteFriends(){
+        //Share Sheet
+    }
+    
+    private func didTapSaveOriginalPosts(){
+        
+    }
+    
+    enum SettingsUrlTypes{
+        case privacy, help, terms
+    }
+    
+    private func openUrl(type: SettingsUrlTypes){
+        let urlString : String
+        switch type {
+        case .privacy:
+            urlString = "https://help.instagram.com/155833707900388"
+        case .help:
+            urlString = "https://help.instagram.com"
+        case .terms:
+            urlString = "https://help.instagram.com/581066165581870"
+        }
+        guard let url = URL(string: urlString) else {
+            return
+        }
+    
+       let vc = SFSafariViewController(url: url)
+       present(vc, animated: true, completion: nil)
+    }
+    
+  
     
     private func didTapLogOut(){
         let actionSheet = UIAlertController(title: "Log Out", message: "Are you sure you want to log out ?!", preferredStyle: .actionSheet)
@@ -88,6 +153,7 @@ extension SettingsViewController :UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text =  data[indexPath.section][indexPath.row].title
+        cell.accessoryType =  .disclosureIndicator
         return cell
     }
     

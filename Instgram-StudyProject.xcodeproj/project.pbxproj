@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CD2A0FE27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */; };
+		2CD2A10027C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */; };
+		2CD2A10227C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */; };
+		2CD2A10427C7A7D700D90331 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A10327C7A7D700D90331 /* IGFeedPostGeneralTableViewCell.swift */; };
 		733EA9A50C5A547E7ED17AF1 /* Pods_Instgram_StudyProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD7F9E42C23542CD60F8B80 /* Pods_Instgram_StudyProjectTests.framework */; };
 		84BF03F6D650DFED66AD139C /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE59419B3BF666CAED1E81F0 /* Pods_Instgram_StudyProject_Instgram_StudyProjectUITests.framework */; };
 		A302075727B0056500DE3A81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A302075627B0056500DE3A81 /* AppDelegate.swift */; };
@@ -61,6 +65,10 @@
 /* Begin PBXFileReference section */
 		0FE5DF3BF6EFD8B2135E2066 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11EA3EAE904000A67C7A400C /* Pods-Instgram-StudyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
+		2CD2A10327C7A7D700D90331 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		3E984A1FF8209BC4E06E8872 /* Pods_Instgram_StudyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_StudyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAE1FA66EBCC6361A9A0707 /* Pods-Instgram-StudyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.release.xcconfig"; sourceTree = "<group>"; };
 		5CD7F9E42C23542CD60F8B80 /* Pods_Instgram_StudyProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instgram_StudyProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +152,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2CD2A0FC27C7A1A000D90331 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2A10527C7A94500D90331 /* Home Cells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2CD2A10527C7A94500D90331 /* Home Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */,
+				2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */,
+				2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */,
+				2CD2A10327C7A7D700D90331 /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Cells";
+			sourceTree = "<group>";
+		};
 		5677AD077068ABAE085B8938 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +245,7 @@
 		A302078A27B005D300DE3A81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CD2A0FC27C7A1A000D90331 /* Cells */,
 				A302076227B0056700DE3A81 /* Assets.xcassets */,
 				A302078D27B0062000DE3A81 /* Storyboards */,
 			);
@@ -543,10 +571,14 @@
 				A302079A27B009AD00DE3A81 /* LoginViewController.swift in Sources */,
 				A302075B27B0056500DE3A81 /* HomeViewController.swift in Sources */,
 				A3EE002827B3B60600FF1995 /* StorageManager.swift in Sources */,
+				2CD2A10027C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
+				2CD2A10227C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift in Sources */,
 				A3EE001F27B3B2E200FF1995 /* PostEditiorViewController.swift in Sources */,
 				A302075727B0056500DE3A81 /* AppDelegate.swift in Sources */,
+				2CD2A10427C7A7D700D90331 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				A302078F27B008D400DE3A81 /* ExploreViewController.swift in Sources */,
 				A302076127B0056500DE3A81 /* Instgram_StudyProject.xcdatamodeld in Sources */,
+				2CD2A0FE27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift in Sources */,
 				A302079C27B00A1E00DE3A81 /* RegisterationViewController.swift in Sources */,
 				A3EE002A27B3C58800FF1995 /* Extensions.swift in Sources */,
 				A3EE002127B3B2F300FF1995 /* PublishViewController.swift in Sources */,
@@ -740,7 +772,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8632GR7884;
+				DEVELOPMENT_TEAM = SR8SLNYKHR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Instgram-StudyProject/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Instgram;
@@ -755,7 +787,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Itworxedu.Instgram-StudyProject";
+				PRODUCT_BUNDLE_IDENTIFIER = "Itworxedu.Instgram-StudyProject1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -771,7 +803,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8632GR7884;
+				DEVELOPMENT_TEAM = SR8SLNYKHR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Instgram-StudyProject/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Instgram;
@@ -786,7 +818,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Itworxedu.Instgram-StudyProject";
+				PRODUCT_BUNDLE_IDENTIFIER = "Itworxedu.Instgram-StudyProject1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
