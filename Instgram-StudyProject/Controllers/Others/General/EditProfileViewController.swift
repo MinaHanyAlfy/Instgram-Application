@@ -17,7 +17,7 @@ class EditProfileViewController: UIViewController {
     
     private let tableView : UITableView = {
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(FormTableViewCell.self, forCellReuseIdentifier: FormTableViewCell.identifier)
         
         return tableView
     }()
@@ -122,8 +122,10 @@ extension EditProfileViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.section][indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = model.label
+        let cell = tableView.dequeueReusableCell(withIdentifier: FormTableViewCell.identifier , for: indexPath) as! FormTableViewCell
+        cell.delegate = self
+        cell.configureCell(with: model)
+       
         
         return cell
     }
@@ -133,5 +135,15 @@ extension EditProfileViewController: UITableViewDelegate, UITableViewDataSource{
         }
         return "Private Information"
     }
+    
+}
+extension EditProfileViewController: FormTableViewCellDelegate{
+    
+    
+    func formTableViewCell(_ cell: FormTableViewCell, didUpdateField updateModel: EditProfileModel) {
+        print("New Data is : ", updateModel.value)
+//        updateModel.value
+    }
+    
     
 }

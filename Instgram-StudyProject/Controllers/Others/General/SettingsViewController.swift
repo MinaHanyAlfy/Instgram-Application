@@ -77,7 +77,9 @@ class SettingsViewController: UIViewController {
     private func didTapEditProfile(){
         let vc = EditProfileViewController()
         vc.navigationItem.title = "Edit Profile"
-        navigationController?.pushViewController(vc, animated: true)
+        let navVc = UINavigationController(rootViewController: vc)
+        navVc.modalPresentationStyle = .fullScreen
+        navigationController?.present(navVc, animated: true, completion: nil)
         
     }
     
