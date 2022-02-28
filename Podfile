@@ -16,7 +16,7 @@ target 'Instgram-StudyProject' do
     # Pods for testing
   end
 
-
+pod 'SDWebImage'
 pod 'Appirater', '2.3.1'
 #Firebase 
 pod 'Firebase/Core'

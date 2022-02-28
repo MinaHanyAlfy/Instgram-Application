@@ -23,22 +23,15 @@ public class StorageManager{
         
     }
     
-    public func downloadImage(with reference: String, completion: @escaping (Result<URL,IGStorageManagerError>)  -> Void){
+    public func downloadImage(with reference: String, completion: @escaping      (Result<URL,IGStorageManagerError>)  -> Void){
         
         bucket.child(reference).downloadURL { url, error in
             guard let url = url,error == nil else {
                 completion(.failure(.failedToDownload))
                 return
             }
-            completion(.success(url))
+            completion(.success(url) )
         }
         
     }
-}
-
-public enum UserPostType{
-    case photo, vedio
-}
-public struct UserPost{
-    let postUserType: UserPostType
 }

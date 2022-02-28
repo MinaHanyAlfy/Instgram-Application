@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C03A07027CCD61F00A81A43 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A06F27CCD61F00A81A43 /* Models.swift */; };
 		2CD2A0FE27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */; };
 		2CD2A10027C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */; };
 		2CD2A10227C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		0FE5DF3BF6EFD8B2135E2066 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11EA3EAE904000A67C7A400C /* Pods-Instgram-StudyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2C03A06F27CCD61F00A81A43 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = "Instgram-StudyProject/Views/CollectionView Headers/Models.swift"; sourceTree = SOURCE_ROOT; };
 		2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		A302078B27B005DC00DE3A81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C03A06F27CCD61F00A81A43 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				A302079327B008F200DE3A81 /* NotificationsViewController.swift in Sources */,
 				A3EE001527B3B28500FF1995 /* EditProfileViewController.swift in Sources */,
 				A302079527B0091200DE3A81 /* ProfileViewController.swift in Sources */,
+				2C03A07027CCD61F00A81A43 /* Models.swift in Sources */,
 				A3EE002427B3B51200FF1995 /* DatabaseManager.swift in Sources */,
 				A3EE001727B3B29400FF1995 /* SettingsViewController.swift in Sources */,
 				A302079127B008E400DE3A81 /* CameraViewController.swift in Sources */,

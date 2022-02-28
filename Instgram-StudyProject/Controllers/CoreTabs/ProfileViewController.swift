@@ -12,7 +12,7 @@ class ProfileViewController: UIViewController {
 //    let collectionView : UICollectionView = {
     private var collectionView: UICollectionView?
 //    }()
-    
+    private var userPosts = [UserPost]()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -20,8 +20,11 @@ class ProfileViewController: UIViewController {
 //        collectionView.
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: view.width/3, height: view.width/3)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
+        let size = (view.width - 4 )/3
+        layout.itemSize = CGSize(width: size, height: size)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 1, bottom: 0, right: 1)
         collectionView = UICollectionView(frame: .zero,collectionViewLayout: layout)
         
         
@@ -62,18 +65,57 @@ class ProfileViewController: UIViewController {
     
 }
 extension ProfileViewController:UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        if section == 0{
+            return 0 
+        }
+//        return userPosts.count
+        return 13
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let model = userPosts[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier, for: indexPath) as! PhotoCollectionViewCell
+        let images = ["test","test1","test2","test3","test4","test5","test6","test7","test8","test9","test10","test11","test12"]
         
-        cell.backgroundColor = .cyan
+        cell.configure(debug: images[indexPath.row])
+//        cell.configure(with: model)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+     // open PostController , get model data
+//        let model = userPosts[indexPath.row]
+//        let vc = PostViewController(model: nil)
+//        vc.title = "Post"
+//        vc.navigationItem.largeTitleDisplayMode = .never
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard kind == UICollectionView.elementKindSectionHeader else{
+            //Footer
+            return UICollectionReusableView()
+        }
+        if indexPath.section == 1 {
+            let tabs = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsCollectionReusableView.identifier, for: indexPath) as! ProfileTabsCollectionReusableView
+            
+            return tabs
+        }
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfilecInfoCollectionReusableView.identifier, for: indexPath) as! ProfilecInfoCollectionReusableView
+        
+        return header
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 0{
+            return CGSize(width: collectionView.width,
+                          height: collectionView.height/3)
+        }
+        return CGSize(width: 65,
+                      height: 65)
+    }
 }

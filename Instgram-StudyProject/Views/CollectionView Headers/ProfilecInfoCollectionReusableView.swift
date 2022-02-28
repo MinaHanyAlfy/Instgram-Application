@@ -9,4 +9,114 @@ import UIKit
 
 class ProfilecInfoCollectionReusableView: UICollectionReusableView {
     static let identifier = "ProfilecInfoCollectionReusableView"
+  
+    
+    private let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "test7")
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        return imageView
+    }()
+    private let followingButton: UIButton = {
+        let button = UIButton()
+        button.tintColor = .label
+        button.setTitle("Following", for: .normal)
+        return button
+    }()
+    private let followersButton: UIButton = {
+        let button = UIButton()
+        button.tintColor = .label
+        button.setTitle("Followers", for: .normal)
+        return button
+    }()
+    private let editProfileButton: UIButton = {
+        let button = UIButton()
+        button.tintColor = .label
+        button.backgroundColor = .secondarySystemBackground
+        button.clipsToBounds = true
+        button.setTitle("Edit Your Profile", for: .normal)
+//        button.backgroundColor = .label
+        return button
+    }()
+    private let postsButton: UIButton = {
+        let button = UIButton()
+        button.tintColor = .label
+        button.setTitle("Posts", for: .normal)
+        return button
+    }()
+    private let nameLabel: UILabel = {
+        let label = UILabel()
+        label.tintColor = .label
+        label.text = "Mina Hany"
+        label.font = .boldSystemFont(ofSize: 17)
+        return label
+    }()
+    private let bioLabel: UILabel = {
+        let label = UILabel()
+        label.tintColor = .label
+        label.text = "Hello From Other Side"
+        return label
+    }()
+
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubViews()
+        backgroundColor = .systemBackground
+    }
+    private func addSubViews(){
+        addSubview(profileImageView)
+        addSubview(editProfileButton)
+        addSubview(nameLabel)
+        addSubview(bioLabel)
+        addSubview(followersButton)
+        addSubview(followingButton)
+        addSubview(postsButton)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+       
+        let profilePhotoSize = width/4
+        profileImageView.layer.cornerRadius = profilePhotoSize/2
+        let buttonHeight = profilePhotoSize/2
+        let countButtonWidth = (width-10-profilePhotoSize)/3
+        editProfileButton.layer.cornerRadius = 12
+        profileImageView.frame = CGRect(x: 6,
+                                        y: 6,
+                                        width: profilePhotoSize,
+                                        height: profilePhotoSize).integral
+        
+        postsButton.frame = CGRect(x: profileImageView.right,
+                                        y: 6,
+                                        width: countButtonWidth ,
+                                        height: buttonHeight).integral
+        
+        followersButton.frame = CGRect(x: postsButton.right,
+                                        y: 6,
+                                        width: countButtonWidth,
+                                        height: buttonHeight).integral
+        followingButton.frame = CGRect(x: followersButton.right,
+                                        y: 6,
+                                        width: countButtonWidth,
+                                        height: buttonHeight).integral
+        nameLabel.frame = CGRect(x: 6,
+                                        y: profileImageView.bottom,
+                                        width: countButtonWidth,
+                                        height: buttonHeight).integral
+        bioLabel.frame = CGRect(x: 6,
+                                               y: nameLabel.bottom,
+                                               width: countButtonWidth,
+                                               height: buttonHeight).integral
+        editProfileButton.frame = CGRect(x: 6,
+                                        y: bioLabel.bottom,
+                                        width: width-12,
+                                        height: buttonHeight-12).integral
+    }
+    
+    
 }
