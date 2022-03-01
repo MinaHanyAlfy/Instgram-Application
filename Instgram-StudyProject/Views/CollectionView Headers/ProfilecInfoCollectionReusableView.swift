@@ -6,11 +6,17 @@
 //
 
 import UIKit
+protocol ProfileInforCollectionReusableViewDelegate: AnyObject{
+    func profileHeaderDidTapPostsButton(_ header: ProfilecInfoCollectionReusableView)
+    func profileHeaderDidTapFollowingButton(_ header: ProfilecInfoCollectionReusableView)
+    func profileHeaderDidTapFollowersButton(_ header: ProfilecInfoCollectionReusableView)
+    func profileHeaderDidTapEditProfileButton(_ header: ProfilecInfoCollectionReusableView)
+}
 
 class ProfilecInfoCollectionReusableView: UICollectionReusableView {
     static let identifier = "ProfilecInfoCollectionReusableView"
   
-    
+    public weak var delegate : ProfileInforCollectionReusableViewDelegate?
     private let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "test7")
@@ -20,19 +26,22 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
     }()
     private let followingButton: UIButton = {
         let button = UIButton()
-        button.tintColor = .label
+//        button.tintColor = .secondaryLabel
+        button.setTitleColor(.secondaryLabel, for: .normal)
         button.setTitle("Following", for: .normal)
         return button
     }()
     private let followersButton: UIButton = {
         let button = UIButton()
-        button.tintColor = .label
+//        button.tintColor = .secondaryLabel
+        button.setTitleColor(.secondaryLabel, for: .normal)
         button.setTitle("Followers", for: .normal)
         return button
     }()
     private let editProfileButton: UIButton = {
         let button = UIButton()
-        button.tintColor = .label
+//        button.tintColor = .secondaryLabel
+        button.setTitleColor(.secondaryLabel, for: .normal)
         button.backgroundColor = .secondarySystemBackground
         button.clipsToBounds = true
         button.setTitle("Edit Your Profile", for: .normal)
@@ -41,20 +50,22 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
     }()
     private let postsButton: UIButton = {
         let button = UIButton()
-        button.tintColor = .label
+//        button.tintColor = .secondaryLabel
+        button.setTitleColor(.secondaryLabel, for: .normal)
         button.setTitle("Posts", for: .normal)
         return button
     }()
     private let nameLabel: UILabel = {
         let label = UILabel()
-        label.tintColor = .label
+        label.tintColor = .secondaryLabel
+        
         label.text = "Mina Hany"
         label.font = .boldSystemFont(ofSize: 17)
         return label
     }()
     private let bioLabel: UILabel = {
         let label = UILabel()
-        label.tintColor = .label
+        label.tintColor = .secondaryLabel
         label.text = "Hello From Other Side"
         return label
     }()
@@ -63,6 +74,7 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubViews()
+        addButtonActions()
         backgroundColor = .systemBackground
     }
     private func addSubViews(){
@@ -73,6 +85,14 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
         addSubview(followersButton)
         addSubview(followingButton)
         addSubview(postsButton)
+    }
+    private func addButtonActions(){
+        
+        postsButton.addTarget(self, action: #selector(didTapPostsButton), for: .touchUpInside)
+        followingButton.addTarget(self, action: #selector(didTapFollowingButton), for: .touchUpInside)
+        followersButton.addTarget(self, action: #selector(didTapFollowersButton), for: .touchUpInside)
+        editProfileButton.addTarget(self, action: #selector(didTapEditProfileButton), for: .touchUpInside)
+
     }
     
     required init?(coder: NSCoder) {
@@ -107,16 +127,31 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
         nameLabel.frame = CGRect(x: 6,
                                         y: profileImageView.bottom,
                                         width: countButtonWidth,
-                                        height: buttonHeight).integral
+                                        height: 52).integral
+        let bioLabelSize = bioLabel.sizeThatFits(frame.size)
         bioLabel.frame = CGRect(x: 6,
                                                y: nameLabel.bottom,
-                                               width: countButtonWidth,
-                                               height: buttonHeight).integral
+                                               width: width-12,
+                                height: bioLabelSize.height).integral
         editProfileButton.frame = CGRect(x: 6,
-                                        y: bioLabel.bottom,
+                                        y: bioLabel.bottom+16,
                                         width: width-12,
                                         height: buttonHeight-12).integral
     }
     
     
+    
+    //MARK: - Actions
+    @objc private func didTapPostsButton(){
+        delegate?.profileHeaderDidTapPostsButton(self)
+    }
+    @objc private func didTapFollowingButton(){
+        delegate?.profileHeaderDidTapFollowingButton(self)
+    }
+    @objc private func didTapFollowersButton(){
+        delegate?.profileHeaderDidTapFollowersButton(self)
+    }
+    @objc private func didTapEditProfileButton(){
+        delegate?.profileHeaderDidTapEditProfileButton(self)
+    }
 }

@@ -93,6 +93,7 @@ extension ProfileViewController:UICollectionViewDataSource, UICollectionViewDele
 //        vc.title = "Post"
 //        vc.navigationItem.largeTitleDisplayMode = .never
 //        navigationController?.pushViewController(vc, animated: true)
+        
 //    }
     }
     
@@ -107,7 +108,7 @@ extension ProfileViewController:UICollectionViewDataSource, UICollectionViewDele
             return tabs
         }
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfilecInfoCollectionReusableView.identifier, for: indexPath) as! ProfilecInfoCollectionReusableView
-        
+        header.delegate = self
         return header
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -118,4 +119,31 @@ extension ProfileViewController:UICollectionViewDataSource, UICollectionViewDele
         return CGSize(width: 65,
                       height: 65)
     }
+}
+extension ProfileViewController: ProfileInforCollectionReusableViewDelegate{
+    func profileHeaderDidTapPostsButton(_ header: ProfilecInfoCollectionReusableView) {
+        collectionView?.scrollToItem(at: IndexPath(row: 0, section: 1), at: .top, animated: true)
+    }
+    
+    func profileHeaderDidTapFollowingButton(_ header: ProfilecInfoCollectionReusableView) {
+        let vc = ListViewController()
+        vc.title = "Following"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func profileHeaderDidTapFollowersButton(_ header: ProfilecInfoCollectionReusableView) {
+        let vc = ListViewController()
+        vc.title = "Followers"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func profileHeaderDidTapEditProfileButton(_ header: ProfilecInfoCollectionReusableView) {
+        let vc = EditProfileViewController()
+        vc.title = "Edit Profile"
+        present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+    }
+    
+    
 }
