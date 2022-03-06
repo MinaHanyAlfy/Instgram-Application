@@ -28,14 +28,18 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
         let button = UIButton()
 //        button.tintColor = .secondaryLabel
         button.setTitleColor(.secondaryLabel, for: .normal)
-        button.setTitle("Following", for: .normal)
+        button.setTitle("1000   Following", for: .normal)
+        button.titleLabel?.textAlignment  = .center
+        button.titleLabel?.numberOfLines = 2
         return button
     }()
     private let followersButton: UIButton = {
         let button = UIButton()
 //        button.tintColor = .secondaryLabel
         button.setTitleColor(.secondaryLabel, for: .normal)
-        button.setTitle("Followers", for: .normal)
+        button.setTitle("1000   Followers", for: .normal)
+        button.titleLabel?.textAlignment  = .center
+        button.titleLabel?.numberOfLines = 2
         return button
     }()
     private let editProfileButton: UIButton = {
@@ -52,7 +56,9 @@ class ProfilecInfoCollectionReusableView: UICollectionReusableView {
         let button = UIButton()
 //        button.tintColor = .secondaryLabel
         button.setTitleColor(.secondaryLabel, for: .normal)
-        button.setTitle("Posts", for: .normal)
+        button.setTitle("13        Posts", for: .normal)
+        button.titleLabel?.textAlignment  = .center
+        button.titleLabel?.numberOfLines = 2
         return button
     }()
     private let nameLabel: UILabel = {

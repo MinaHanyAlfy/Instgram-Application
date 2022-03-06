@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C03A07027CCD61F00A81A43 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A06F27CCD61F00A81A43 /* Models.swift */; };
+		2C1E469427D4EBD300100D00 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E469227D4EBD300100D00 /* UserFollowTableViewCell.swift */; };
 		2CD2A0FE27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */; };
 		2CD2A10027C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */; };
 		2CD2A10227C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */; };
@@ -71,6 +72,7 @@
 		0FE5DF3BF6EFD8B2135E2066 /* Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests/Pods-Instgram-StudyProject-Instgram-StudyProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11EA3EAE904000A67C7A400C /* Pods-Instgram-StudyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instgram-StudyProject.debug.xcconfig"; path = "Target Support Files/Pods-Instgram-StudyProject/Pods-Instgram-StudyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		2C03A06F27CCD61F00A81A43 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = "Instgram-StudyProject/Views/CollectionView Headers/Models.swift"; sourceTree = SOURCE_ROOT; };
+		2C1E469227D4EBD300100D00 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		2CD2A0FD27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
 		2CD2A0FF27C7A79A00D90331 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		2CD2A10127C7A7BA00D90331 /* IGFeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				2CD2A10527C7A94500D90331 /* Home Cells */,
 				2CF2F35527CBA8700053EB83 /* FormTableViewCell.swift */,
 				2CF2F35727CBBDD80053EB83 /* PhotoCollectionViewCell.swift */,
+				2C1E469227D4EBD300100D00 /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				A302078F27B008D400DE3A81 /* ExploreViewController.swift in Sources */,
 				2CF2F35627CBA8700053EB83 /* FormTableViewCell.swift in Sources */,
 				A302076127B0056500DE3A81 /* Instgram_StudyProject.xcdatamodeld in Sources */,
+				2C1E469427D4EBD300100D00 /* UserFollowTableViewCell.swift in Sources */,
 				2CD2A0FE27C7A1DE00D90331 /* IGFeedPostTableViewCell.swift in Sources */,
 				A302079C27B00A1E00DE3A81 /* RegisterationViewController.swift in Sources */,
 				A3EE002A27B3C58800FF1995 /* Extensions.swift in Sources */,

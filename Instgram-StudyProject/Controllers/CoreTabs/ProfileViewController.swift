@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-    
+   
 //    let collectionView : UICollectionView = {
     private var collectionView: UICollectionView?
 //    }()
@@ -104,7 +104,7 @@ extension ProfileViewController:UICollectionViewDataSource, UICollectionViewDele
         }
         if indexPath.section == 1 {
             let tabs = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsCollectionReusableView.identifier, for: indexPath) as! ProfileTabsCollectionReusableView
-            
+            tabs.delegate = self
             return tabs
         }
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfilecInfoCollectionReusableView.identifier, for: indexPath) as! ProfilecInfoCollectionReusableView
@@ -116,8 +116,8 @@ extension ProfileViewController:UICollectionViewDataSource, UICollectionViewDele
             return CGSize(width: collectionView.width,
                           height: collectionView.height/3)
         }
-        return CGSize(width: 65,
-                      height: 65)
+        return CGSize(width: 50,
+                      height: 50)
     }
 }
 extension ProfileViewController: ProfileInforCollectionReusableViewDelegate{
@@ -126,14 +126,14 @@ extension ProfileViewController: ProfileInforCollectionReusableViewDelegate{
     }
     
     func profileHeaderDidTapFollowingButton(_ header: ProfilecInfoCollectionReusableView) {
-        let vc = ListViewController()
+        let vc = ListViewController(data: [UserFollow(username: "Mina Hany", image: "test2",title: "MINA10M",isFollow: false),UserFollow(username: "Osama Gamil", image: "test4",title: "Osos44",isFollow: false),UserFollow(username: "Lochi Joe", image: "test5",title: "joe1111",isFollow: false)] )
         vc.title = "Following"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
     
     func profileHeaderDidTapFollowersButton(_ header: ProfilecInfoCollectionReusableView) {
-        let vc = ListViewController()
+        let vc = ListViewController(data:[UserFollow(username: "Mohamed Ahmad", image: "test9",title: "AhmadMO",isFollow: false),UserFollow(username: "Osama Gamil", image: "test4",title: "Osos44",isFollow: false),UserFollow(username: "Adam Saad", image: "test5",title: "adam_saad",isFollow: false)])
         vc.title = "Followers"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
@@ -143,6 +143,17 @@ extension ProfileViewController: ProfileInforCollectionReusableViewDelegate{
         let vc = EditProfileViewController()
         vc.title = "Edit Profile"
         present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
+    }
+    
+    
+}
+extension ProfileViewController: ProfileTapsCollectionReusableViewDelegate{
+    func didTapGridButton() {
+        //Reload CollectionView With main Data
+    }
+    
+    func didTapTagButton() {
+        //Reload CollectionView With Tagged Data
     }
     
     
