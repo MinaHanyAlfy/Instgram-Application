@@ -13,7 +13,6 @@ class ListViewController: UIViewController {
     private let tableView :UITableView = {
         let tableView = UITableView()
         tableView.register(UserFollowTableViewCell.self, forCellReuseIdentifier: UserFollowTableViewCell.identifier)
-        
         return tableView
     }()
     init(data :[UserFollow]) {
@@ -43,8 +42,9 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserFollowTableViewCell.identifier, for: indexPath) as! UserFollowTableViewCell
-        
+
         cell.config(user: data[indexPath.row])
+        cell.delegate = self
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,9 +53,22 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 100
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
+    }
     
+    
+}
+extension ListViewController: UserFollowTableViewCellDelegate{
+    func didTapFollowUnFollowButton(model: UserFollow) {
+        switch model.isFollow {
+        case .following:
+            // Tell DataBase to UnFollow
+            break
+        case .notFollowing:
+            // Tell DataBase to Follow
+            break
+        }
+    }
     
 }

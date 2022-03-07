@@ -126,14 +126,14 @@ extension ProfileViewController: ProfileInforCollectionReusableViewDelegate{
     }
     
     func profileHeaderDidTapFollowingButton(_ header: ProfilecInfoCollectionReusableView) {
-        let vc = ListViewController(data: [UserFollow(username: "Mina Hany", image: "test2",title: "MINA10M",isFollow: false),UserFollow(username: "Osama Gamil", image: "test4",title: "Osos44",isFollow: false),UserFollow(username: "Lochi Joe", image: "test5",title: "joe1111",isFollow: false)] )
+        let vc = ListViewController(data: [UserFollow(username: "Mina Hany", image: "test2",title: "MINA10M",isFollow: .following),UserFollow(username: "Osama Gamil", image: "test4",title: "Osos44",isFollow: .following),UserFollow(username: "Lochi Joe", image: "test5",title: "joe1111",isFollow: .notFollowing)] )
         vc.title = "Following"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
     
     func profileHeaderDidTapFollowersButton(_ header: ProfilecInfoCollectionReusableView) {
-        let vc = ListViewController(data:[UserFollow(username: "Mohamed Ahmad", image: "test9",title: "AhmadMO",isFollow: false),UserFollow(username: "Osama Gamil", image: "test4",title: "Osos44",isFollow: false),UserFollow(username: "Adam Saad", image: "test5",title: "adam_saad",isFollow: false)])
+        let vc = ListViewController(data:[UserFollow(username: "Mohamed Ahmad", image: "test9",title: "AhmadMO",isFollow: .notFollowing),UserFollow(username: "Osama Gamil", image: "test4",title: "Osos44",isFollow: .following),UserFollow(username: "Adam Saad", image: "test5",title: "adam_saad",isFollow: .notFollowing)])
         vc.title = "Followers"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
