@@ -13,8 +13,9 @@ struct UserFollow{
     var title: String
     var isFollow: FollowState
 }
-enum FollowState{
-    case following, notFollowing
+public enum FollowState{
+    case following
+    case notFollowing
 }
 protocol UserFollowTableViewCellDelegate : AnyObject{
     func didTapFollowUnFollowButton(model:UserFollow)

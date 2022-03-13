@@ -149,11 +149,13 @@ extension ProfileViewController: ProfileInforCollectionReusableViewDelegate{
 }
 extension ProfileViewController: ProfileTapsCollectionReusableViewDelegate{
     func didTapGridButton() {
+        print("Grid ")
         //Reload CollectionView With main Data
     }
     
     func didTapTagButton() {
         //Reload CollectionView With Tagged Data
+        print("Tagged")
     }
     
     

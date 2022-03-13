@@ -14,6 +14,7 @@ public struct User{
     let bio: String
     let counts : UserCount
     let joinDate: Date
+    let profilePic: URL
 }
 //MARK:  - Represent UserPost
 public struct UserPost{
@@ -59,4 +60,13 @@ public enum UserPostType{
 }
 public enum Gender{
     case male,female
+}
+public enum UserNotificationType{
+    case like(post: UserPost)
+    case follow(state: FollowState)
+}
+public struct UserNotification{
+    let user : User
+    let text : String
+    let type : UserNotificationType
 }
