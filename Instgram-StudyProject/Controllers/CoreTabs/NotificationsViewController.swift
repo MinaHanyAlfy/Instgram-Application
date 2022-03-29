@@ -13,7 +13,7 @@ class NotificationsViewController: UIViewController {
         var tableView = UITableView()
         tableView.register(NotificationFollowEventTableViewCell.self, forCellReuseIdentifier: NotificationFollowEventTableViewCell.identifier)
         tableView.register(NotificationLikeEventTableViewCell.self, forCellReuseIdentifier: NotificationLikeEventTableViewCell.identifier)
-        
+        tableView.isUserInteractionEnabled = true
         return  tableView
     }()
     private var models = [UserNotification]()
@@ -29,19 +29,23 @@ class NotificationsViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Notification"
 //        view.backgroundColor = .systemBackground
+        view.addSubview(tableView)
         view.addSubview(spinner)
 //        spinner.startAnimating()
-        view.addSubview(tableView)
+       
         tableView.delegate = self
         tableView.dataSource = self
         fetchNotification()
         
     }
+    
     private func fetchNotification(){
         for x in 0...100{
-            let post = UserPost(identifier: "", postUserType: .photo, thumbnailImage: URL(string:"https://www.google.com")!, postUrl: URL(string:"https://www.google.com")!, caption: nil, likeCount: [], comments: [], createDate: Date(), userTagged: [])
+            let user = User(name: (firstname: "", lastname: ""), birthdate: Date(), gender: .male, bio: "Hello", counts: UserCount(followers: 10, following: 10, posts: 10), joinDate: Date(), profilePic: URL(string: "https://www.google.com")!)
+
+            let post = UserPost(identifier: "", postUserType: .photo, thumbnailImage: URL(string:"https://www.google.com")!, postUrl: URL(string:"https://www.google.com")!, caption: nil, likeCount: [], comments: [], createDate: Date(), userTagged: [],owner: user )
             
-            let model = UserNotification(user: User(name: (firstname: "", lastname: ""), birthdate: Date(), gender: .male, bio: "Hello", counts: UserCount(followers: 10, following: 10, posts: 10), joinDate: Date(), profilePic: URL(string: "https://www.google.com")!), text: x % 2 == 0 ? "@Mina Hany Liked Your post." : "@RamyMicheal has follow you.", type: x % 2 == 0 ? .like(post: post) : .follow(state: .notFollowing))
+            let model = UserNotification(user: user ,text: x % 2 == 0 ? "@Mina Hany Liked Your post." : "@RamyMicheal has follow you.", type: x % 2 == 0 ? .like(post: post) : .follow(state: .notFollowing))
             
             models.append(model)
         }
@@ -49,6 +53,7 @@ class NotificationsViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.frame
+        
         spinner.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         spinner.center = view.center
 //        noNotificationViewLayout()
@@ -104,8 +109,18 @@ extension NotificationsViewController:NotificationFollowEventTableViewCellDelega
 
 extension NotificationsViewController: NotificationLikeEventTableViewCellDelegate{
     func didTapPostButton(model: UserNotification) {
-        //When Tap On Post To direct to the post.
-        print("Post Tapped")
+        switch model.type {
+        case .like(let post):
+            let vc = PostViewController(model: post)
+            vc.modalPresentationStyle = .fullScreen
+            vc.title = post.postUserType.rawValue
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
+        case .follow(_):
+            fatalError("Dev Issue Should never called.")
+            
+        }
+
     }
     
     

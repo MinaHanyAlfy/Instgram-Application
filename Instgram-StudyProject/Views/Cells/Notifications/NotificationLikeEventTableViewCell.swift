@@ -40,13 +40,13 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
     }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        contentView.addSubview(label)
+        contentView.addSubview(profileImageView)
+        contentView.addSubview(postButton)
         postButton.addTarget(self, action: #selector(didTapPost), for: .touchUpInside)
         clipsToBounds = true
         selectionStyle = .none
-        addSubview(label)
-        addSubview(profileImageView)
-        addSubview(postButton)
-       
     }
     
     required init?(coder: NSCoder) {
@@ -87,6 +87,7 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
         case .follow(_):
             break
         case .like(let post):
+            
             let thumbnail = post.thumbnailImage
             guard !thumbnail.absoluteString.contains("googl.com") else{
                 return
@@ -98,12 +99,12 @@ class NotificationLikeEventTableViewCell: UITableViewCell {
         label.text = model.text 
 //        profileImageView.sd_setImage(with: model.user.profilePic, completed: nil)
         profileImageView.image = UIImage(named: "test4")
-        print("Our model: ",self.model )
+
     }
     
+    
+    
     @objc private func didTapPost(){
-        print("Our model: ",self.model )
-        print("Our model2: ",model )
         guard let model = self.model else {
             return
         }

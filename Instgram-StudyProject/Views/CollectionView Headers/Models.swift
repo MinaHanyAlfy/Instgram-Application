@@ -15,6 +15,7 @@ public struct User{
     let counts : UserCount
     let joinDate: Date
     let profilePic: URL
+    
 }
 //MARK:  - Represent UserPost
 public struct UserPost{
@@ -27,6 +28,7 @@ public struct UserPost{
     let comments : [PostComment]
     let createDate: Date
     let userTagged: [String]
+    let owner: User 
 }
 
 public struct UserCount{
@@ -55,8 +57,9 @@ public struct CommentLike{
     let commentIdentifier: String
     
 }
-public enum UserPostType{
-    case photo, vedio
+public enum UserPostType: String{
+    case photo = "Photo"
+    case vedio = "Vedio"
 }
 public enum Gender{
     case male,female
